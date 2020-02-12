@@ -7,7 +7,7 @@ parent-id: devops
 
 ### Challenges
 * Challenge 1
-
+* Challenge 2
 
 #### Challenge verification
 

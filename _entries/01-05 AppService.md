@@ -12,7 +12,6 @@ parent-id: intro
 * Enable native (kudu) build from GitHub source
 * Repeat for backend
 
-
 #### Challenge verification
 
 #### Tips
@@ -26,7 +25,7 @@ Now we want to host our web resources in Azure. We will use an App Service Web A
 Your Resource Group should already be created in the Git Init section. Now run the following command:
 
 ```sh
-az appservice plan create --resource-group <Resource-Group-Name> --name appworkshop-plan --sku S1 --is-linux
+az appservice plan create --resource-group <Resource-Group-Name> --name appworkshop-plan --sku S1
 
 ```
 
@@ -38,8 +37,10 @@ az appservice plan create --resource-group <Resource-Group-Name> --name appworks
 To create the Web App, you can run the following command. Remember to replace the needed values.
 
 ```sh
-az webapp create -g <Resource-Group-Name> --name <Unique-WebApp-Name> --plan appworkshop-plan --runtime '"DOTNETCORE|Latest"'
+az webapp create -g <Resource-Group-Name> --name <Unique-WebApp-Name> --plan appworkshop-plan
 ```
+
+_Note: You can create a Linux-based App Service Plan by adding `--is-linux` and when creating an Web App you can specify the runtime with e.g. `--runtime 'DOTNETCORE|LTS'`. When provisioning from a PowerShell console you need to wrap the runtime in extra quotes like `--runtime '"DOTNETCORE|LTS"'`._
 
 As we have multiple project in the source repo, we need to tell the build engine which project to build. We do this by specifying the PROJECT setting:
 ```sh

@@ -11,10 +11,20 @@ parent-id: intro
 * Verify that the project runs on localhost
 * Commit the files and push to your GitHub repo
 
-
 #### Challenge verification
+Running `git status` should give you this output.
+
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+```
 
 #### Tips
+
+* [Blazor models](https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1)
+* [Blazor templates](https://docs.microsoft.com/aspnet/core/blazor/templates?view=aspnetcore-3.1)
 
 #### Step-by-step solution
 

@@ -34,7 +34,7 @@ Ensure the tools are installed. Azure CLI (at least 2.0.76) and .Net Core SDK (a
 
 If you want to use Visual Studio Code, you can find it here <https://code.visualstudio.com/download> - but any text editor will work
 
-Also please authenticate your Azure CLI by running the command below on your machine and following the instructions. Ensure you are in the right subscription.
+Also please authenticate your Azure CLI by running the command below on your machine and following the instructions. Ensure you have the right subscription in context.
 
 ```sh
 az login
